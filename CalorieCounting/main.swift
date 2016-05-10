@@ -194,3 +194,13 @@ if dessertChoice == 1 {
     totalCalories += 75
 }
 
+/*
+ * SHOW OUTPUT
+ */
+
+// Print the total calories
+print("Your total Calorie count is \(totalCalories).")
+
+
+
+
