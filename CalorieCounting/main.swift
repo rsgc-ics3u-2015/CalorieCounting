@@ -46,7 +46,7 @@ repeat {
 } while burgerChoice == -1
 
 /*
- * Get the burger choice
+ * Get the side order choice
  */
 var sideOrderChoice : Int = -1
 
