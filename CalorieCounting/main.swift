@@ -11,6 +11,10 @@ import Foundation
 // Print the welcome message
 print("Welcome to Chip's Fast Food Emporium")
 
+/*
+ * COLLECT INPUT
+ */
+
 /* 
  * Get the burger choice
  */
@@ -147,5 +151,46 @@ repeat {
     
 } while dessertChoice == -1
 
+/*
+ * PROCESS
+ */
 
+// Keep track of total calories
+var totalCalories : Int = 0
+
+// Calculate the burger calories
+if burgerChoice == 1 {
+    totalCalories += 461
+} else if burgerChoice == 2 {
+    totalCalories += 431
+} else if burgerChoice == 3 {
+    totalCalories += 420
+}
+
+// Calculate the side order calories
+if sideOrderChoice == 1 {
+    totalCalories += 100
+} else if sideOrderChoice == 2 {
+    totalCalories += 57
+} else if sideOrderChoice == 3 {
+    totalCalories += 70
+}
+
+// Calculate the drink calories
+if drinkChoice == 1 {
+    totalCalories += 130
+} else if drinkChoice == 2 {
+    totalCalories += 160
+} else if drinkChoice == 3 {
+    totalCalories += 118
+}
+
+// Calculate the dessert calories
+if dessertChoice == 1 {
+    totalCalories += 167
+} else if dessertChoice == 2 {
+    totalCalories += 266
+} else if dessertChoice == 3 {
+    totalCalories += 75
+}
 
